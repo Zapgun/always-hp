@@ -479,6 +479,11 @@ Hooks.on('ready', () => {
         Hooks.call(`dragEnd${this.app.constructor.name}`, this.app);
         return oldDragMouseUp.call(this, event);
     }
+    
+    var hidden = !1;
+    $(document).on("keypress", function (e) {
+        13 == e.which && (hidden ? $("#always-hp").show() : $("#always-hp").hide(), (hidden = !hidden));
+    });
 });
 
 Hooks.on('controlToken', () => {
