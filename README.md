@@ -1,3 +1,9 @@
+I've tried to include a few quality of life additions here to improve the module. These currently include:
+- Hitting the enter key will show and hide the hp box
+
+Manifest Link: https://raw.githubusercontent.com/Zapgun/always-hp/main/module.json
+ 
+# MARS 5e - Moerills alternative rolling style for 5e <!-- omit in toc -->
 # Always HP
 Add-On Module for Foundry VTT
 
