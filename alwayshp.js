@@ -491,7 +491,7 @@ Hooks.on('ready', () => {
             }
             hidden = !hidden;
         }
-    })
+    });
 });
 
 Hooks.on('controlToken', () => {
