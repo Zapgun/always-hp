@@ -480,10 +480,18 @@ Hooks.on('ready', () => {
         return oldDragMouseUp.call(this, event);
     }
     
-    var hidden = !1;
+    var hidden = false;
     $(document).on("keypress", function (e) {
-        13 == e.which && (hidden ? $("#always-hp").show() : $("#always-hp").hide(), (hidden = !hidden));
-    });
+        if (13 == e.which) {
+            if (hidden) {
+                $("#always-hp").show();
+                $("#alwayshp-hp").focus();
+            } else {
+                $("#always-hp").hide();
+            }
+            hidden = !hidden;
+        }
+    })
 });
 
 Hooks.on('controlToken', () => {
